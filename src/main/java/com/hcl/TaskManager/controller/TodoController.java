@@ -18,9 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.hcl.TaskManager.model.Todo;
-import com.hcl.TaskManager.service.ITodoService;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import com.hcl.TaskManager.service.*;
+import com.hcl.TaskManager.model.*;
 
 @Controller
 public class TodoController {

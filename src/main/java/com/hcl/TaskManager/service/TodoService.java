@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hcl.TaskManager.model.Todo;
-import com.hcl.TaskManager.repository.TodoRepository;
+import com.hcl.TaskManager.repository.*;
 
 @Service
 public class TodoService implements ITodoService {

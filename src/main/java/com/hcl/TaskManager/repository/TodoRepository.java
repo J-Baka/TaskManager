@@ -1,9 +1,10 @@
 package com.hcl.TaskManager.repository;
 
-import com.hcl.TaskManager.model.Todo;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
+import com.hcl.TaskManager.model.*;
 
 public interface TodoRepository extends JpaRepository < Todo, Long > {
     List < Todo > findByUserName(String user);

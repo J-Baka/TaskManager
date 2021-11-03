@@ -15,14 +15,14 @@ public class LogoutController {
 
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout(HttpServletRequest request,
-                         HttpServletResponse response) {
+        HttpServletResponse response) {
 
         Authentication authentication = SecurityContextHolder.getContext()
-                .getAuthentication();
+            .getAuthentication();
 
         if (authentication != null) {
             new SecurityContextLogoutHandler().logout(request, response,
-                    authentication);
+                authentication);
         }
 
         return "redirect:/";

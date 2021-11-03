@@ -23,6 +23,8 @@ public class Todo {
     private String description;
 
     private Date targetDate;
+    
+    private String email;
 
     public Todo() {
         super();
@@ -66,4 +68,12 @@ public class Todo {
     public void setTargetDate(Date targetDate) {
         this.targetDate = targetDate;
     }
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 }
